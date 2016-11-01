@@ -49,7 +49,9 @@ This Nginx configuration comes in two parts:
 6. Tweak any paths that may need changing on your server
 7. Restart nginx via `sudo nginx -s reload`
 
-If you're using [Forge](https://forge.laravel.com/), use the above file as a guide, making sure to not change any of the directives labeled `# FORGE CONFIG (DOT NOT REMOVE!)` in your existing `.conf` file.
+If you're using [Forge](https://forge.laravel.com/), it takes care of a number of these things for you, but still needs tuning.  Use the `somedomain.com.conf` file as a guide, making sure to not change any of the directives labeled `# FORGE CONFIG (DOT NOT REMOVE!)` in your existing `.conf` file.
+
+The same applies for CloudWays, ServerPilot, Homestead, MAMP, etc.
 
 ## Nginx-Craft Changelog
 
