@@ -28,6 +28,7 @@ The following are assumptions made in this configuration:
 * The canonical domain is SOMEDOMAIN.com (no www.)
 * Nginx is version 1.9.5 or later (and thus supports http2)
 * Paths are standard Ubuntu, change as needed
+* You're using php7 via php-fpm
 
 If any of these assumptions are invalid, make the appropriate changes.
 
