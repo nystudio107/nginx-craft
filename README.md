@@ -55,8 +55,14 @@ The same applies for CloudWays, ServerPilot, Homestead, MAMP, etc.
 
 ## Nginx-Craft Changelog
 
+### 1.0.1 -- 2016.11.09
+
+* [Added] Added `server_tokens off` to disable sending the Nginx version number
+* [Added] Added a commented out `Content-Security-Policy` header in `security.conf`
+* [Improved] Updated README.md
+
 ### 1.0.0 -- 2016.11.01
 
-* Initial release
+* [Added] Initial release
 
 Brought to you by [nystudio107](https://nystudio107.com/)
