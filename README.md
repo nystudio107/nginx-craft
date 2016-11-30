@@ -10,6 +10,7 @@ The Nginx-Craft configuration handles:
 
 * Redirecting from HTTP to HTTPS
 * Canonical domain rewrites from www.SOMEDOMAIN.com to SOMEDOMAIN.com
+* 301 Redirect URLs with trailing /'s as per https://webmasters.googleblog.com/2010/04/to-slash-or-not-to-slash.html
 * Setting `PATH_INFO` properly via php-fpm -> PHP
 * "Far-future" Expires headers
 * Adding XSS and other security headers
@@ -54,6 +55,12 @@ If you're using [Forge](https://forge.laravel.com/), it takes care of a number o
 The same applies for CloudWays, ServerPilot, Homestead, MAMP, etc.
 
 ## Nginx-Craft Changelog
+
+### 1.0.2 -- 2016.11.30
+
+* [Added] Added an example Forge configuration in `forge-example`
+* [Added] 301 Redirect URLs with trailing /'s as per https://webmasters.googleblog.com/2010/04/to-slash-or-not-to-slash.html
+* [Improved] Updated README.md
 
 ### 1.0.1 -- 2016.11.09
 
