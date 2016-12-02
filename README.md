@@ -54,6 +54,12 @@ If you're using [Forge](https://forge.laravel.com/), it takes care of a number o
 
 The same applies for CloudWays, ServerPilot, Homestead, MAMP, etc.
 
+## Miscellanea
+
+If you encounter a problem where large asset uploads fail, despite `memory_limit`, `post_max_size` and `upload_max_filesize` being set properly in your `php.ini`, you may need to add the following to the `http {}` block of the main `nginx.conf`:
+
+    client_max_body_size 20M;
+
 ## Nginx-Craft Changelog
 
 ### 1.0.2 -- 2016.11.30
