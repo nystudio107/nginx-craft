@@ -19,6 +19,7 @@ The Nginx-Craft configuration handles:
 * IPv4 and IPv6 support
 * http2 support
 * Reasonable SSL cipher suites and TLS protocols
+* Localized sites
 
 ### Assumptions made
 
@@ -61,6 +62,13 @@ If you encounter a problem where large asset uploads fail, despite `memory_limit
     client_max_body_size 20M;
 
 ## Nginx-Craft Changelog
+
+### 1.0.3 -- 2016.12.10
+
+* [Added] Added support for localized sites (commented out by default)
+* [Added] Added `HTTP_PROXY`
+* [Added] Added `client_max_body_size` to the README.md
+* [Improved] Updated README.md
 
 ### 1.0.2 -- 2016.11.30
 
