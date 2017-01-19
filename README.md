@@ -56,35 +56,31 @@ If you're using [Forge](https://forge.laravel.com/), it takes care of a number o
 
 The same applies for CloudWays, ServerPilot, Homestead, MAMP, etc.
 
+## Forge & opcache
+
+If you're using Forge, understand that `opcache` is off by default. To enable it, go to your server in Forge, click on *Edit Files* and choose *Edit PHP FPM Configuration* and search on `opcache`. Here are the defaults I use; tweak them to suit your needs:
+
+	[opcache]
+	; Determines if Zend OPCache is enabled
+	opcache.enable=1
+
+	; Determines if Zend OPCache is enabled for the CLI version of PHP
+	;opcache.enable_cli=0
+
+	; The OPcache shared memory storage size.
+	opcache.memory_consumption=256
+
+	; The amount of memory for interned strings in Mbytes.
+	opcache.interned_strings_buffer=16
+
+	; The maximum number of keys (scripts) in the OPcache hash table.
+	; Only numbers between 200 and 100000 are allowed.
+	opcache.max_accelerated_files=8000
+
 ## Miscellanea
 
 If you encounter a problem where large asset uploads fail, despite `memory_limit`, `post_max_size` and `upload_max_filesize` being set properly in your `php.ini`, you may need to add the following to the `http {}` block of the main `nginx.conf`:
 
     client_max_body_size 20M;
-
-## Nginx-Craft Changelog
-
-### 1.0.3 -- 2016.12.10
-
-* [Added] Added support for localized sites (commented out by default)
-* [Added] Added `HTTP_PROXY`
-* [Added] Added `client_max_body_size` to the README.md
-* [Improved] Updated README.md
-
-### 1.0.2 -- 2016.11.30
-
-* [Added] Added an example Forge configuration in `forge-example`
-* [Added] 301 Redirect URLs with trailing /'s as per https://webmasters.googleblog.com/2010/04/to-slash-or-not-to-slash.html
-* [Improved] Updated README.md
-
-### 1.0.1 -- 2016.11.09
-
-* [Added] Added `server_tokens off` to disable sending the Nginx version number
-* [Added] Added a commented out `Content-Security-Policy` header in `security.conf`
-* [Improved] Updated README.md
-
-### 1.0.0 -- 2016.11.01
-
-* [Added] Initial release
 
 Brought to you by [nystudio107](https://nystudio107.com/)
