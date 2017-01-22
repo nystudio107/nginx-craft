@@ -77,6 +77,8 @@ If you're using Forge, understand that `opcache` is off by default. To enable it
 	; Only numbers between 200 and 100000 are allowed.
 	opcache.max_accelerated_files=8000
 
+More about tweaking `opcache` can be found in the [Fine-Tune Your Opcache Configuration to Avoid Caching Suprises](https://tideways.io/profiler/blog/fine-tune-your-opcache-configuration-to-avoid-caching-suprises) article
+
 ## Miscellanea
 
 If you encounter a problem where large asset uploads fail, despite `memory_limit`, `post_max_size` and `upload_max_filesize` being set properly in your `php.ini`, you may need to add the following to the `http {}` block of the main `nginx.conf`:
