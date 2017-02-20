@@ -60,22 +60,27 @@ The same applies for CloudWays, ServerPilot, Homestead, MAMP, etc.
 
 If you're using Forge, understand that `opcache` is off by default. To enable it, go to your server in Forge, click on *Edit Files* and choose *Edit PHP FPM Configuration* and search on `opcache`. Here are the defaults I use; tweak them to suit your needs:
 
-	[opcache]
-	; Determines if Zend OPCache is enabled
-	opcache.enable=1
+    [opcache]
+    ; Determines if Zend OPCache is enabled
+    opcache.enable=1
 
-	; Determines if Zend OPCache is enabled for the CLI version of PHP
-	;opcache.enable_cli=0
+    ; Determines if Zend OPCache is enabled for the CLI version of PHP
+    ;opcache.enable_cli=0
 
-	; The OPcache shared memory storage size.
-	opcache.memory_consumption=256
+    ; The OPcache shared memory storage size.
+    opcache.memory_consumption=256
 
-	; The amount of memory for interned strings in Mbytes.
-	opcache.interned_strings_buffer=16
+    ; The amount of memory for interned strings in Mbytes.
+    opcache.interned_strings_buffer=16
 
-	; The maximum number of keys (scripts) in the OPcache hash table.
-	; Only numbers between 200 and 100000 are allowed.
-	opcache.max_accelerated_files=8000
+    ; The maximum number of keys (scripts) in the OPcache hash table.
+    ; Only numbers between 200 and 100000 are allowed.
+    opcache.max_accelerated_files=8000
+
+    ; If disabled, all PHPDoc comments are dropped from the code to reduce the
+    ; size of the optimized code.
+    ;opcache.save_comments=1
+    opcache.save_comments=0
 
 More about tweaking `opcache` can be found in the [Fine-Tune Your Opcache Configuration to Avoid Caching Suprises](https://tideways.io/profiler/blog/fine-tune-your-opcache-configuration-to-avoid-caching-suprises) article. The [Best Zend OpCache Settings/Tuning/Config](https://www.scalingphpbook.com/blog/2014/02/14/best-zend-opcache-settings.html) article is very useful as well.
 
