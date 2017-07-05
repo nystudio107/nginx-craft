@@ -1,5 +1,14 @@
 # Nginx-Craft Changelog
 
+## 1.0.6 - 2017.07.06
+### Added
+* Added handling of missing `.php` files routed through Craft
+* Added `404` handler
+* Added `.gitignore`
+
+### Changed
+* Removed `html` and other non-cacheable files from matching in `expires.conf`
+
 ## 1.0.5 - 2017.03.27
 ### Added
 * Added `webp` to the `expires` header support
