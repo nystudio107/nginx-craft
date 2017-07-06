@@ -58,6 +58,8 @@ The same applies for CloudWays, ServerPilot, Homestead, MAMP, etc.
 
 ## Forge & opcache
 
+**N.B.:** Forge now has `opcache` functionality baked-in, you can enable it via the Server settings, so this information is largely deprecated.
+
 If you're using Forge, understand that `opcache` is off by default. To enable it, go to your server in Forge, click on *Edit Files* and choose *Edit PHP FPM Configuration* and search on `opcache`. Here are the defaults I use; tweak them to suit your needs:
 
     [opcache]
