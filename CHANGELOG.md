@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.7 - 2017.08.05
+### Added
+* Added `Referrer-Policy "strict-origin-when-cross-origin";` to `security.conf`
+
 ## 1.0.6 - 2017.07.06
 ### Added
 * Added handling of missing `.php` files routed through Craft
