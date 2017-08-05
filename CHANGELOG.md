@@ -2,7 +2,7 @@
 
 ## 1.0.7 - 2017.08.05
 ### Added
-* Added `Referrer-Policy "strict-origin-when-cross-origin";` to `security.conf`
+* Added `Referrer-Policy "no-referrer-when-downgrade";` to `security.conf`
 
 ## 1.0.6 - 2017.07.06
 ### Added
