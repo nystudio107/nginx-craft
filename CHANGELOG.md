@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.8 - 2017.08.24
+### Changed
+* Fixed an issue where the removal of trailing slashes could cause directory URLs to fail with "too many redirects"
+
 ## 1.0.7 - 2017.08.05
 ### Added
 * Added `Referrer-Policy "no-referrer-when-downgrade";` to `security.conf`
