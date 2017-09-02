@@ -1,5 +1,12 @@
 # Nginx-Craft Changelog
 
+## 1.0.9 - 2017.09.01
+### Changed
+* Added OCSP stapling
+* Tweaked TLS settings for performance
+* Optimized `ssl_buffer_size` for TTFB
+* Updated README.md with instructions for downloading your Issuer certificate
+
 ## 1.0.8 - 2017.08.24
 ### Changed
 * Fixed an issue where the removal of trailing slashes could cause directory URLs to fail with "too many redirects"
