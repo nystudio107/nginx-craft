@@ -46,15 +46,18 @@ This Nginx configuration comes in two parts:
 
 1. Obtain an SSL certificate for your domain via [LetsEncrypt.com](https://letsencrypt.org/) (or via other certificate authorities).  LetsEncrypt.com is free, and it's automated.  You will need a basic server up and running that responds to port 80 to do this, [LetsEnecrypt/Nginx tutorial](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04)
 2. Create a `dhparam.pem` via `sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048`
-3. Upload the entire `nginx-partials` folder to `/etc/nginx/`
-4. Rename the `somedomain.com.conf` file to `yourdomain.com.conf`
-5. Do a search & replace in `yourdomain.com.conf` to change `SOMEDOMAIN` -> `yourdomain`
-6. Tweak any paths that may need changing on your server
-7. Restart nginx via `sudo nginx -s reload`
+3. Download your Issuer certificate via `sudo wget -O /etc/nginx/certs/lets-encrypt-x3-cross-signed.pem "https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem"`
+4. Upload the entire `nginx-partials` folder to `/etc/nginx/`
+5. Rename the `somedomain.com.conf` file to `yourdomain.com.conf`
+6. Do a search & replace in `yourdomain.com.conf` to change `SOMEDOMAIN` -> `yourdomain`
+7. Tweak any paths that may need changing on your server
+8. Restart nginx via `sudo nginx -s reload`
 
 If you're using [Forge](https://forge.laravel.com/), it takes care of a number of these things for you, but still needs tuning.  Use the `somedomain.com.conf` file as a guide, making sure to not change any of the directives labeled `# FORGE CONFIG (DOT NOT REMOVE!)` in your existing `.conf` file.
 
 The same applies for CloudWays, ServerPilot, Homestead, MAMP, etc.
+
+For further information on TLS optimization, see the [How to properly configure your nginx for TLS](https://medium.com/@mvuksano/how-to-properly-configure-your-nginx-for-tls-564651438fe0) article.
 
 ## Forge & opcache
 
