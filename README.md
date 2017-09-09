@@ -35,6 +35,8 @@ The following are assumptions made in this configuration:
 
 If any of these assumptions are invalid, make the appropriate changes.
 
+**Note**: We disable TLSv1.0 because it is insecure, but IE 8, 9 & 10 need to have support for TLSv1.1 [manually enabled or they will not be able to connect](https://answers.microsoft.com/en-us/ie/forum/ie10-windows_other/disabling-tlsv10-breaks-compatibility-with-ie-9/80e77823-0f0c-49a8-b525-15ce6d7a570d?auth=1).
+
 ### What's included
 
 This Nginx configuration comes in two parts:
