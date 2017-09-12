@@ -1,5 +1,10 @@
 # Nginx-Craft Changelog
 
+## 1.0.10 - 2017.09.12
+### Changed
+* Updated the config to use php7.1 by default
+* Added comments for the CME config
+
 ## 1.0.9 - 2017.09.01
 ### Changed
 * Added OCSP stapling
