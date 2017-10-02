@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.11 - 2017.10.02
+### Added
+* Added a `basic_localdev.com.conf` for people who just want a basic Nginx configuration for Craft local dev
+
 ## 1.0.10 - 2017.09.12
 ### Changed
 * Updated the config to use php7.1 by default
