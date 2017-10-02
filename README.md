@@ -90,6 +90,14 @@ If you're using Forge, understand that `opcache` is off by default. To enable it
 
 More about tweaking `opcache` can be found in the [Fine-Tune Your Opcache Configuration to Avoid Caching Suprises](https://tideways.io/profiler/blog/fine-tune-your-opcache-configuration-to-avoid-caching-suprises) article. The [Best Zend OpCache Settings/Tuning/Config](https://www.scalingphpbook.com/blog/2014/02/14/best-zend-opcache-settings.html) article is very useful as well.
 
+## Local Development
+
+While all of the configuration in the `somedomain.com.conf` will work fine in local development as well, some people might want a simpler setup for local development.
+
+There is a `basic_localdev.com.conf` that you can use for a basic Nginx configuration that will work with Craft without any of the bells, whistles, or optimizations found in the `somedomain.com.conf`.
+
+While this is suitable for getting up and running quickly for local development, do not use it in production. There are a number of performance optimizations missing from it.
+
 ## Miscellanea
 
 If you encounter a problem where large asset uploads fail, despite `memory_limit`, `post_max_size` and `upload_max_filesize` being set properly in your `php.ini`, you may need to add the following to the `http {}` block of the main `nginx.conf`:
