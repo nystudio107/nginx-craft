@@ -53,7 +53,8 @@ This Nginx configuration comes in two parts:
 5. Rename the `somedomain.com.conf` file to `yourdomain.com.conf`
 6. Do a search & replace in `yourdomain.com.conf` to change `SOMEDOMAIN` -> `yourdomain`
 7. Tweak any paths that may need changing on your server
-8. Restart nginx via `sudo nginx -s reload`
+8. Change the `fastcgi_pass unix:/var/run/php/php7.1-fpm.sock;` line to reflect whatever version of PHP you're running
+9. Restart nginx via `sudo nginx -s reload`
 
 If you're using [Forge](https://forge.laravel.com/), it takes care of a number of these things for you, but still needs tuning.  Use the `somedomain.com.conf` file as a guide, making sure to not change any of the directives labeled `# FORGE CONFIG (DOT NOT REMOVE!)` in your existing `.conf` file.
 
