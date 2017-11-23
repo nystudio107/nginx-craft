@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.12 - 2017.11.23
+### Added
+* Added configuration for banning bots based on UserAgent
+
 ## 1.0.11 - 2017.10.02
 ### Added
 * Added a `basic_localdev.com.conf` for people who just want a basic Nginx configuration for Craft local dev
