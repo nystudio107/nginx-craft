@@ -1,5 +1,11 @@
 # Nginx-Craft Changelog
 
+## 1.0.13 - 2017.12.14
+### Added
+* Disable limits on the maximum allowed size of the client request body via `client_max_body_size`
+* Add expires headers for `mp3` files
+* Updated bot UserAgents list
+
 ## 1.0.12 - 2017.11.23
 ### Added
 * Added configuration for banning bots based on UserAgent

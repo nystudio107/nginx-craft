@@ -99,10 +99,4 @@ There is a `basic_localdev.com.conf` that you can use for a basic Nginx configur
 
 While this is suitable for getting up and running quickly for local development, do not use it in production. There are a number of performance optimizations missing from it.
 
-## Miscellanea
-
-If you encounter a problem where large asset uploads fail, despite `memory_limit`, `post_max_size` and `upload_max_filesize` being set properly in your `php.ini`, you may need to add the following to the `http {}` block of the main `nginx.conf`:
-
-    client_max_body_size 20M;
-
 Brought to you by [nystudio107](https://nystudio107.com/)
