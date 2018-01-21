@@ -12,6 +12,7 @@ The Nginx-Craft configuration handles:
 * Canonical domain rewrites from www.SOMEDOMAIN.com to SOMEDOMAIN.com
 * 301 Redirect URLs with trailing /'s as per https://webmasters.googleblog.com/2010/04/to-slash-or-not-to-slash.html
 * Setting `PATH_INFO` properly via php-fpm -> PHP
+* Setting `HTTP_HOST` to mitigate [HTTP_HOST Security Issues](https://expressionengine.com/blog/http-host-and-server-name-security-issues)
 * "Far-future" Expires headers
 * Adding XSS and other security headers
 * Gzip compression
@@ -20,6 +21,7 @@ The Nginx-Craft configuration handles:
 * http2 support
 * Reasonable SSL cipher suites and TLS protocols
 * Localized sites
+* Server-side includes
 
 ### Assumptions made
 
