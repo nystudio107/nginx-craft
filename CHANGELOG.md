@@ -4,6 +4,7 @@
 ### Added
 * Explicitly set fastcgi_param `HTTP_HOST` to mitigate [HTTP_HOST Security Issues](https://expressionengine.com/blog/http-host-and-server-name-security-issues)
 * Added `=404` as the last parameter in each of the `try_files` directives to avoid internal loops
+* Added `ssi on;` to the default config for server-side includes
 
 ## 1.0.13 - 2017.12.14
 ### Added
