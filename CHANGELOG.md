@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.15 - 2018.01.23
+### Changed
+* Removed incorrect `=404` directives
+
 ## 1.0.14 - 2018.01.21
 ### Added
 * Explicitly set fastcgi_param `HTTP_HOST` to mitigate [HTTP_HOST Security Issues](https://expressionengine.com/blog/http-host-and-server-name-security-issues)
