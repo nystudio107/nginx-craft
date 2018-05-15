@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.16 - 2018.05.14
+### Changed
+* Removed duplicate `client_max_body_size` directives
+
 ## 1.0.15 - 2018.01.23
 ### Changed
 * Removed incorrect `=404` directives
