@@ -50,7 +50,7 @@ This Nginx configuration comes in two parts:
 
 1. Obtain an SSL certificate for your domain via [LetsEncrypt.com](https://letsencrypt.org/) (or via other certificate authorities).  LetsEncrypt.com is free, and it's automated.  You will need a basic server up and running that responds to port 80 to do this, [LetsEnecrypt/Nginx tutorial](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04)
 2. Create a `dhparam.pem` via `sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048`
-3. Download your Issuer certificate via `sudo wget -O /etc/nginx/ssl/lets-encrypt-x3-cross-signed.pem "https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem"`
+3. Download your Issuer certificate via `mkdir /etc/nginx/ssl; sudo wget -O /etc/nginx/ssl/lets-encrypt-x3-cross-signed.pem "https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem"`
 4. Upload the entire `nginx-partials` folder to `/etc/nginx/`
 5. Rename the `somedomain.com.conf` file to `yourdomain.com.conf`
 6. Do a search & replace in `yourdomain.com.conf` to change `SOMEDOMAIN` -> `yourdomain`
