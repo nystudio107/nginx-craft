@@ -1,5 +1,12 @@
 # Nginx-Craft Changelog
 
+## 1.0.17 - 2018.08.21
+### Added
+* Don't allow browser caching of dynamically generated content
+
+### Changed
+* Added  "Remove if you don't plan to use server-set ENV variables" comment
+
 ## 1.0.16 - 2018.05.14
 ### Changed
 * Removed duplicate `client_max_body_size` directives
