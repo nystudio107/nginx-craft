@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.18 - 2019.03.21
+### Added
+* Includes [Dotenvy](https://github.com/nystudio107/dotenvy) generated `.env` files
+
 ## 1.0.17 - 2018.08.21
 ### Added
 * Don't allow browser caching of dynamically generated content

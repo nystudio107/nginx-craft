@@ -22,6 +22,7 @@ The Nginx-Craft configuration handles:
 * Reasonable SSL cipher suites and TLS protocols
 * Localized sites
 * Server-side includes
+* Optionally includes [Dotenvy](https://github.com/nystudio107/dotenvy) generated `.env` files
 
 ### Assumptions made
 
