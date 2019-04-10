@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.19 - 2019.04.10
+### Added
+* Include an example of serving up a placeholder image when a 404 happens for static image assets
+
 ## 1.0.18 - 2019.03.21
 ### Added
 * Includes [Dotenvy](https://github.com/nystudio107/dotenvy) generated `.env` files
