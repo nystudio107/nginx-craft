@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.20 - 2019.04.23
+### Changed
+* Added `try_files` to the `rss` location block so that `.rss` files can be Craft templates
+
 ## 1.0.19 - 2019.04.10
 ### Added
 * Include an example of serving up a placeholder image when a 404 happens for static image assets
