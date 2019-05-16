@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.20 - 2019.05.15
+### Changed
+* Removed the `location` block in `expires.conf` that matched `.rss` and `.atom` since these almost always should go through Craft
+
 ## 1.0.19 - 2019.04.10
 ### Added
 * Include an example of serving up a placeholder image when a 404 happens for static image assets
