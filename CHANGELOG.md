@@ -1,5 +1,10 @@
 # Nginx-Craft Changelog
 
+## 1.0.21 - 2019.07.24
+### Changed
+* Load `security.conf` from nginx-partials again inside of the `location ~ [^/]\.php(/|$)` block
+* Added `xmlrpc` to the WordPress redirects
+
 ## 1.0.20 - 2019.05.15
 ### Changed
 * Removed the `location` block in `expires.conf` that matched `.rss` and `.atom` since these almost always should go through Craft
