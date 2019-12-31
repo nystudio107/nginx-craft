@@ -14,6 +14,7 @@ The Nginx-Craft configuration handles:
 * Setting `PATH_INFO` properly via php-fpm -> PHP
 * Setting `HTTP_HOST` to mitigate [HTTP_HOST Security Issues](https://expressionengine.com/blog/http-host-and-server-name-security-issues)
 * "Far-future" Expires headers
+* Enable serving of static gzip files via [gzip_static](http://nginx.org/en/docs/http/ngx_http_gzip_static_module.html)
 * Adding XSS and other security headers
 * Gzip compression
 * Filename-based cache busting for static resources
