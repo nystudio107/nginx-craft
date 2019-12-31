@@ -1,5 +1,10 @@
 # Nginx-Craft Changelog
 
+## 1.0.22 - 2019.12.31
+### Changed
+* Enable serving of static gzip files via [gzip_static](http://nginx.org/en/docs/http/ngx_http_gzip_static_module.html)
+* Removed superfluous whitespace in map block
+
 ## 1.0.21 - 2019.07.24
 ### Changed
 * Load `security.conf` from nginx-partials again inside of the `location ~ [^/]\.php(/|$)` block
