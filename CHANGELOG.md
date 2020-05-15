@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.23 - 2020.05.14
+### Added
+* Added better settings in `expires.conf` for static resources, leveraging `immutable`, `must-revalidate`, and `max-age`
+
 ## 1.0.22 - 2019.12.31
 ### Changed
 * Enable serving of static gzip files via [gzip_static](http://nginx.org/en/docs/http/ngx_http_gzip_static_module.html)
