@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.24 - 2020.05.14
+### Added
+* Added `always` to all of the added headers in `security.conf` so that they are added regardless of response code
+
 ## 1.0.23 - 2020.05.14
 ### Added
 * Added better `Cache-Control` header settings in `expires.conf` for static resources, leveraging `immutable`, `must-revalidate`, and `max-age`
