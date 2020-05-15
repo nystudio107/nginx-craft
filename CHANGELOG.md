@@ -2,7 +2,8 @@
 
 ## 1.0.23 - 2020.05.14
 ### Added
-* Added better settings in `expires.conf` for static resources, leveraging `immutable`, `must-revalidate`, and `max-age`
+* Added better `Cache-Control` header settings in `expires.conf` for static resources, leveraging `immutable`, `must-revalidate`, and `max-age`
+* Added `svg` to cache-busted extensions in `cache-busting.conf`
 
 ## 1.0.22 - 2019.12.31
 ### Changed
