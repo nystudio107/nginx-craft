@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.25 - 2020.06.15
+### Changed
+* Route any 404s for `expires.conf` matches back through Craft for handling
+
 ## 1.0.24 - 2020.05.14
 ### Added
 * Added `always` to all of the added headers in `security.conf` so that they are added regardless of response code
