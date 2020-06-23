@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.26 - 2020.06.23
+### Changed
+* Changed `$document_root` to `$realpath_root` to sidestype opcache issues automatically [Learn More](https://ma.ttias.be/php-opcache-and-symlink-based-deploys/)
+
 ## 1.0.25 - 2020.06.15
 ### Changed
 * Route any 404s for `expires.conf` matches back through Craft for handling
