@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.27 - 2020.06.23
+### Changed
+* Explicitly set `DOCUMENT_ROOT`
+
 ## 1.0.26 - 2020.06.23
 ### Changed
 * Changed `$document_root` to `$realpath_root` to sidestep opcache issues automatically [Learn More](https://ma.ttias.be/php-opcache-and-symlink-based-deploys/)
