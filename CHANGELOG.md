@@ -1,5 +1,10 @@
 # Nginx-Craft Changelog
 
+## 1.0.28 - 2020.08.20
+### Changed
+* Set `server_tokens` to `off`
+* Changed the `dhparam` setting to `/etc/nginx/dhparams.pem` to mirror the Forge default
+ 
 ## 1.0.27 - 2020.06.23
 ### Changed
 * Explicitly set `DOCUMENT_ROOT`
