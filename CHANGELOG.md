@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.29 - 2020.10.21
+### Changed
+* Fix multi-site requests missing query params
+
 ## 1.0.28 - 2020.08.20
 ### Changed
 * Set `server_tokens` to `off`
