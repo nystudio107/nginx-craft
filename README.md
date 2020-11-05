@@ -60,9 +60,11 @@ This Nginx configuration comes in two parts:
 8. Change the `fastcgi_pass unix:/var/run/php/php7.1-fpm.sock;` line to reflect whatever version of PHP you're running
 9. Restart nginx via `sudo nginx -s reload`
 
-If you're using [Forge](https://forge.laravel.com/), it takes care of a number of these things for you, but still needs tuning.  Use the `somedomain.com.conf` file as a guide, making sure to not change any of the directives labeled `# FORGE CONFIG (DOT NOT REMOVE!)` in your existing `.conf` file.
+If you're using [Forge](https://forge.laravel.com/), it takes care of a number of these things for you, but still needs tuning. 
 
 The same applies for CloudWays, ServerPilot, Homestead, MAMP, etc.
+
+A [Forge Template](https://forge.laravel.com/docs/1.0/servers/nginx-templates.html) is provided in `forge-templates/NginxTemplate.conf` that you can use to [automate setting up](https://blog.laravel.com/forge-nginx-templates) your Forge servers.
 
 For further information on TLS optimization, see the [How to properly configure your nginx for TLS](https://medium.com/@mvuksano/how-to-properly-configure-your-nginx-for-tls-564651438fe0) article.
 
