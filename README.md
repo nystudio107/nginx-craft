@@ -66,6 +66,11 @@ The same applies for CloudWays, ServerPilot, Homestead, MAMP, etc.
 
 A [Forge Template](https://forge.laravel.com/docs/1.0/servers/nginx-templates.html) is provided in `forge-templates/NginxTemplate.conf` that you can use to [automate setting up](https://blog.laravel.com/forge-nginx-templates) your Forge servers.
 
+For this to work, you must clone the repo into `/home/forge` via:
+```
+git clone https://github.com/nystudio107/nginx-craft.git /home/forge
+```
+
 For further information on TLS optimization, see the [How to properly configure your nginx for TLS](https://medium.com/@mvuksano/how-to-properly-configure-your-nginx-for-tls-564651438fe0) article.
 
 ## Forge & opcache
