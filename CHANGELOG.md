@@ -2,7 +2,7 @@
 
 ## 1.0.30 - 2020.11.05
 ### Added
-* Added support for (Forge Templates](https://forge.laravel.com/docs/1.0/servers/nginx-templates.html) via `forge-templates/NginxTemplate.conf`
+* Added support for [Forge Templates](https://forge.laravel.com/docs/1.0/servers/nginx-templates.html) via `forge-templates/NginxTemplate.conf`
 
 ## 1.0.29 - 2020.10.21
 ### Changed
