@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.32 - 2020.12.11
+### Changed
+* Removed repeated `server_tokens` within Primary block
+
 ## 1.0.31 - 2020.11.19
 ### Changed
 * Changed `public` to `web` for the server `root` example
