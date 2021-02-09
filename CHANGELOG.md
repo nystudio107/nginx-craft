@@ -3,6 +3,7 @@
 ## 1.0.32 - UNRELEASED
 ### Changed
 * Changed the include path from `/etc/nginx` to `/home/forge` for the Forge config
+* Removed repeated `server_tokens` within Primary block
 
 ## 1.0.31 - 2020.11.19
 ### Changed
