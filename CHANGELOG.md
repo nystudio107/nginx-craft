@@ -1,8 +1,10 @@
 # Nginx-Craft Changelog
 
-## 1.0.32 - UNRELEASED
+## 1.0.32 - 2021.02.08
 ### Changed
 * Changed the include path from `/etc/nginx` to `/home/forge` for the Forge config
+* Removed repeated `server_tokens` within Primary block
+* Changes max-age for HSTS to be one year for preloading
 
 ## 1.0.31 - 2020.11.19
 ### Changed
