@@ -1,5 +1,9 @@
 # Nginx-Craft Changelog
 
+## 1.0.33 - 2021.03.17
+### Changed
+* Updated the Forge template to use more Forge-provided variables
+
 ## 1.0.32 - 2021.02.08
 ### Changed
 * Changed the include path from `/etc/nginx` to `/home/forge` for the Forge config
