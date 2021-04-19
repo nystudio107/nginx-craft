@@ -1,5 +1,10 @@
 # Nginx-Craft Changelog
 
+## 1.0.34 - 2021.04.18
+### Added
+* Added a [Forge Template](https://forge.laravel.com/docs/1.0/servers/nginx-templates.html) `NginxFastCGICacheTemplate.conf`
+* Opt out of Google Federated Learning of Cohorts ("FLoC") via the `Permissions-Policy` header. [ref:](https://amifloced.org/)
+
 ## 1.0.33 - 2021.03.17
 ### Changed
 * Updated the Forge template to use more Forge-provided variables
